@@ -9,144 +9,137 @@
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>Игра Темплейты</title>
 </head>
 <body>
-
 <div class="game-wrapper">
     <div class="game-body">
-        <div class="score">
-            <span class="rating">Емкость моей памяти составляет 10% </span>
-        </div>
         <div class="blocks-wrapper">
-            <div class="blocks-wrapper-block row col-md-12 center">
-                <div class="blocks"><input class="block" value="1"></div>
-                <div class="blocks"><input class="block" value="2"></div>
-                <div class="blocks"><input class="block" value="3"></div>
-                <div class="blocks"><input class="block" value="4"></div>
-                <div class="blocks"><input class="block" value="5"></div>
-                <div class="blocks"><input class="block" value="6"></div>
-                <div class="blocks"><input class="block" value="7"></div>
-                <div class="blocks"><input class="block" value="8"></div>
-                <div class="blocks"><input class="block" value="9"></div>
-                <div class="blocks"><input class="block" value="10"></div>
-                <div class="blocks"><input class="block" value="11"></div>
-                <div class="blocks"><input class="block" value="12"></div>
-                <div class="blocks"><input class="block" value="13"></div>
-                <div class="blocks"><input class="block" value="14"></div>
-                <div class="blocks"><input class="block" value="15"></div>
-                <div class="blocks"><input class="block" value="16"></div>
-                <div class="blocks"><input class="block" value="17"></div>
-                <div class="blocks"><input class="block" value="18"></div>
-                <div class="blocks"><input class="block" value="19"></div>
-                <div class="blocks"><input class="block" value="20"></div>
-                <div class="blocks"><input class="block" value="21"></div>
-                <div class="blocks"><input class="block" value="22"></div>
-                <div class="blocks"><input class="block" value="23"></div>
-                <div class="blocks"><input class="block" value="24"></div>
-                <div class="blocks"><input class="block" value="25"></div>
+            <div class="blocks-wrapper-block row col-md-12 center row">
+                <div class="blocks col-md-2"><input class="block" value="1"></div>
+                <div class="blocks col-md-2"><input class="block" value="2"></div>
+                <div class="blocks col-md-2"><input class="block" value="3"></div>
+                <div class="blocks col-md-2"><input class="block" value="4"></div>
+                <div class="blocks col-md-2"><input class="block" value="5"></div>
+                <div class="blocks col-md-2"><input class="block" value="6"></div>
+                <div class="blocks col-md-2"><input class="block" value="7"></div>
+                <div class="blocks col-md-2"><input class="block" value="8"></div>
+                <div class="blocks col-md-2"><input class="block" value="9"></div>
+                <div class="blocks col-md-2"><input class="block" value="10"></div>
+                <div class="blocks col-md-2"><input class="block" value="11"></div>
+                <div class="blocks col-md-2"><input class="block" value="12"></div>
+                <div class="blocks col-md-2"><input class="block" value="13"></div>
+                <div class="blocks col-md-2"><input class="block" value="14"></div>
+                <div class="blocks col-md-2"><input class="block" value="15"></div>
+                <div class="blocks col-md-2"><input class="block" value="16"></div>
+                <div class="blocks col-md-2"><input class="block" value="17"></div>
+                <div class="blocks col-md-2"><input class="block" value="18"></div>
+                <div class="blocks col-md-2"><input class="block" value="19"></div>
+                <div class="blocks col-md-2"><input class="block" value="20"></div>
+                <div class="blocks col-md-2"><input class="block" value="21"></div>
+                <div class="blocks col-md-2"><input class="block" value="22"></div>
+                <div class="blocks col-md-2"><input class="block" value="23"></div>
+                <div class="blocks col-md-2"><input class="block" value="24"></div>
+                <div class="blocks col-md-2"><input class="block" value="25"></div>
             </div>
-        </div>
-        <div class="status">
-            <span class="status">
-                status in%
-            </span>
         </div>
     </div>
-    <div class="game-control">
-        <div class="game-control-block row">
-            <div class="gametype">
-                <div class="select1">
-                    <select id="gametype-select">
-                        <option value="Упорядоченый">Упорядоченый</option>
-                        <option value="Произвольный">Произвольный</option>
-                    </select>
+    <div class="modal-control-mobile">
+        <div class="game-control">
+            <div class="game-control-block row">
+                <div class="gametype">
+                    <div class="select1">
+                        <select id="gametype-select">
+                            <option value="Упорядоченый">Упорядоченый</option>
+                            <option value="Произвольный">Произвольный</option>
+                        </select>
 
-                    <div class="select-inputs">
-                        <label class="radio-button checkcontainer" for="radio-button">
-                            <p><input class="gametype-input" type="radio" value="Прямой" name="radio-gametype1"
-                                      checked="checked"><span>Прямой</span></p>
-                            <span class="checkmark">
+                        <div class="select-inputs">
+                            <label class="radio-button checkcontainer" for="radio-button">
+                                <p><input class="gametype-input" type="radio" value="Прямой" name="radio-gametype1"
+                                          checked="checked"><span>Прямой</span></p>
+                                <span class="checkmark">
 
                             </span>
-                        </label>
-                        <label class="radio-button checkcontainer" for="radio-button">
-                            <p><input class="gametype-input" type="radio" value="Обратный" name="radio-gametype1"
-                                      checked="checked"><span>Обратный</span></p>
-                            <span class="checkmark">
+                            </label>
+                            <label class="radio-button checkcontainer" for="radio-button">
+                                <p><input class="gametype-input" type="radio" value="Обратный" name="radio-gametype1"
+                                          checked="checked"><span>Обратный</span></p>
+                                <span class="checkmark">
                             </span>
-                        </label>
+                            </label>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="game-control-block row">
-            <div class="visibletime">
-                <div class="select2">
-                    <p for="visibletime">Время Просмотра</p>
+            <div class="game-control-block row">
+                <div class="visibletime">
+                    <div class="select2">
+                        <p for="visibletime">Время Просмотра</p>
+                        <div class="range-wrapper">
+                            <input type="range" id="visibletime-range" name="volume" min="0" max="10">
+                            <input type="text" id="visibletime-res" value="5">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="game-control-block row">
+                <div class="button-start">
+                    <button class="button gamestart">
+                        <h1 style="margin:0; padding:0;"> NEXT </h1>
+                        <p> Достигай сверх максимума !!! </p>
+                    </button>
+                </div>
+            </div>
+            <div class="game-control-block row">
+                <div class="timer">
+                    <p for="timer">Timer</p>
+                    <input type="checkbox" name="checkbox">
                     <div class="range-wrapper">
-                        <input type="range" id="visibletime-range" name="volume" min="0" max="10">
-                        <input type="text" id="visibletime-res" value="5">
+                        <input type="range" id="timer-range" name="volume" min="0" max="10">
+                        <input type="text" id="timervalue" value="5">
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="game-control-block row">
-            <div class="button-start">
-                <button class="button gamestart">
-                    <h1 style="margin:0; padding:0;"> NEXT </h1>
-                    <p> Достигай сверх максимума !!! </p>
-                </button>
-            </div>
-        </div>
-        <div class="game-control-block row">
-            <div class="timer">
-                <p for="timer">Timer</p>
-                <input type="checkbox" name="checkbox">
-                <div class="range-wrapper">
-                    <input type="range" id="timer-range" name="volume" min="0" max="10">
-                    <input type="text" id="timervalue" value="5">
+            <div class="game-control-block row">
+                <div class="collsquantity">
+                    <p>Количество Ячеек</p>
+                    <select id="collsquantityselect">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                    </select>
                 </div>
-            </div>
-        </div>
-        <div class="game-control-block row">
-            <div class="collsquantity">
-                <p>Количество Ячеек</p>
-                <select id="collsquantityselect">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                    <option value="10">10</option>
-                    <option value="11">11</option>
-                    <option value="12">12</option>
-                    <option value="13">13</option>
-                    <option value="14">14</option>
-                    <option value="15">15</option>
-                    <option value="16">16</option>
-                    <option value="17">17</option>
-                    <option value="18">18</option>
-                    <option value="19">19</option>
-                    <option value="20">20</option>
-                    <option value="21">21</option>
-                    <option value="22">22</option>
-                    <option value="23">23</option>
-                    <option value="24">24</option>
-                    <option value="25">25</option>
-                </select>
             </div>
         </div>
     </div>
 </div>
-
 <button type="button" class="btn btn-primary btn-modal" data-toggle="modal" data-target="#exampleModal" hidden></button>
 <!--.btn .btn-primary .btn-modal-->
-<!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
      aria-hidden="true">
     <div class="modal-dialog" role="document">
@@ -159,14 +152,10 @@
             <div class="modal-body" style="text-align: center">
                 <h2>Развиваем память <span class="rating">143</span></h2>
                 <div class="img">
-                    <img class="img" src="http://i.piccy.info/i9/1bd8ad2fd30cf0ae9145898196d7e734/1570692115/76965/1341827/memmory.jpg" alt="checkmarkgif">
+                    <img class="img"
+                         src="http://i.piccy.info/i9/1bd8ad2fd30cf0ae9145898196d7e734/1570692115/76965/1341827/memmory.jpg"
+                         alt="checkmarkgif">
                 </div>
-                <style type="text/css">
-                    .img img {
-                        margin: 20px;
-                        height: 120px;
-                    }
-                </style>
                 <div class="fblogin">
                     <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
                         Поделиться Рейтингом
@@ -179,14 +168,26 @@
         </div>
     </div>
 </div>
-
 <style type="text/css">
     .select2 p {
         text-align: center;
     }
 
+    .img img {
+        margin: 20px;
+        height: 120px;
+    }
+
     .modal-dialog {
         margin-top: 25vh;
+    }
+
+    .modal-header {
+        border: none;
+    }
+
+    .modal-footer {
+        border-top: 0px solid #dee2e6;
     }
 
     select#collsquantityselect {
@@ -219,6 +220,17 @@
         width: 100%;
     }
 
+    .blocks-wrapper .row {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        width: 70vw;
+        margin: 20px auto;
+    }
+
     .gametype {
         width: 100%;
     }
@@ -229,9 +241,6 @@
         margin: 0;
         height: 36px;
         font-size: 16px;
-    }
-
-    p {
     }
 
     .visibletime {
@@ -330,7 +339,9 @@
     }
 
     .game-body {
+        position: relative;
         width: 100%;
+        height: 100%;
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
@@ -350,29 +361,19 @@
         position: relative;
     }
 
-    @media screen and (max-width: 1090px) {
-        .game-control {
-
-            display: flex;
-
-            flex-direction: row;
-
-            flex-wrap: wrap;
-
-            justify-content: space-around;
-
-            align-items: center;
-
-            align-content: center;
-
-            margin: 20px 0;
-
-            position: relative;
-        }
+    .score {
+        width: 250px;
+        position: absolute;
+        left: 0;
     }
 
-    .score, .status {
+    .status {
+        position: absolute;
         width: 250px;
+        right: 0;
+        height: 100%;
+        top: 0;
+        background: 0;
     }
 
     .blocks-wrapper .row {
@@ -382,7 +383,8 @@
         justify-content: center;
         align-items: center;
         align-content: center;
-        width: 1460px;
+        width: 85vw;
+        height: 100vh;
         margin: 20px auto;
     }
 
@@ -396,8 +398,8 @@
     }
 
     .blocks {
-        width: 260px;
-        height: 240px;
+        height: 150px;
+        min-width: 150px;
         margin: 10px;
     }
 
@@ -514,12 +516,39 @@
         display: inline-block;
         position: relative;
     }
+
+    @media screen and (max-width: 1090px) {
+        .game-control {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            align-content: center;
+            margin: 20px 0;
+            position: relative;
+        }
+    }
+
+    @media screen and (max-width: 640px) {
+        .modal-control-mobile {
+            position: fixed;
+            width: 640px;
+            height: 400px;
+            z-index: 9999;
+            bottom: 100px;
+        }
+
+        .score {
+            display: none;
+        }
+
+        .status {
+            display: none;
+        }
+    }
 </style>
-
-<div id="status"></div>
-<div id="result"></div>
 </body>
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
@@ -530,279 +559,8 @@
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+ <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-		
-<script type="text/javascript">
-    $(document).ready(function () {
-        window.fbAsyncInit = function () {
-            FB.init({
-                appId: '506739016772050',
-                cookie: true,
-                cache: true,
-                xfbml: true,
-                version: 'v4.0'
-            });
-            $('#loginbutton,#feedbutton').removeAttr('disabled');
-            FB.AppEvents.logPageView();
-            FB.getLoginStatus(function (response) {
-                statusChangeCallback(response);
-            });
-            FB.ui({
-                method: 'share_open_graph',
-                action_type: 'og.likes',
-                quote: "TEXT TEXT",
-                cache: true,
-                hashtag: ["#inten"],
-                action_properties: JSON.stringify({
-                    object: 'https://inten.ua/igra-templejti/'
-                })
-            }, function (response) {
-                console.log(response);
-            });
-        };
-
-        (function (d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) {
-                return;
-            }
-            js = d.createElement(s);
-            js.id = id;
-            js.src = "https://connect.facebook.net/en_US/sdk.js";
-            fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
-
-        function statusChangeCallback(response) {
-            console.log('statusChangeCallback');
-            console.log(response);
-            // The response object is returned with a status field that lets the
-            // app know the current login status of the person.
-            // Full docs on the response object can be found in the documentation
-            // for FB.getLoginStatus().
-            if (response.status === 'connected') {
-                // Logged into your app and Facebook.
-                console.log('Welcome!  Fetching your information.... ');
-                FB.api('/me', function (response) {
-                    console.log('Successful login for: ' + response.name);
-                    document.getElementById('status').innerHTML =
-                        'Thanks for logging in, ' + response.name + '!';
-                });
-            } else {
-                // The person is not logged into your app or we are unable to tell.
-                document.getElementById('status').innerHTML = 'Please log ' +
-                    'into this app.';
-            }
-        }
-
-
-        var gametype1 = "";
-        var gametype2 = "";
-        var timer = "";
-        var position = "";
-
-        var SCORERATE = 0;
-        var cellsnumber = 0;
-        var randomcellnumber = 0;
-        var iteration = 0;
-        var GAMERATE = 0;
-        var randomnumber = 0;
-        var wincell = 0;
-        var timevisible = 0;
-        var strue = 0;
-        var itr = 0;
-        var cellsquantity = 0;
-
-        var positions = [];
-        var wincells = [];
-        var randomnumbers = [];
-        var cellposition = [];
-        var wincellsfinalres = [];
-        var positions = [];
-
-        $(document).on('input', '#visibletime-range', function () {
-            $("#visibletime-res").val($(this).val());
-        });
-
-        $(document).on('input', '#timer-range', function () {
-            $("#timervalue").val($(this).val());
-        });
-
-        gametype1 = $("#gametype-select").val();
-        gametype2 = $("input[name='radio-gametype']:checked").val();
-
-        timer1 = $("#visibletime-res").val();
-
-        $("#collsquantityselect").change(function () {
-            cellsquantity = $("#collsquantityselect").val();
-        });
-
-        randomnumber = $("#randomnumber").val();
-        randomnumbers = $("#randomnumbers").val();
-
-        iteration = $("#iteration").val();
-        cellposition = $("#cellposition").val();
-
-        $(".gamestart").click(function () {
-            gamestart();
-            setscorerate();
-        });
-
-        var randnumber = 0;
-        var randnumbertmp = 0;
-        var positionstrue = 0;
-
-        function gamestart() {
-            positions = [];
-            for (var i = 1; i <= cellsquantity; i++) {
-                randnumbertmp = getNumber(25);
-                randnumber = randnumbertmp;
-                if (randnumber !== randnumbertmp) {
-                    randnumber = randnumbertmp;
-                }
-                positions.push(randnumber);
-            }
-
-            $("input.block").css("color", "#fff");
-
-            positions.forEach(function (element) {
-                $.each($('.blocks-wrapper-block .blocks'), function () {
-
-                    if ($(this).find("input.block").val() == element) {
-                        $(this).find("input.block").css("color", "#000");
-                    }
-                });
-                strue = true;
-            });
-
-            if (strue == true) {
-                $.each($('.blocks-wrapper-block .blocks'), function () {
-                    randomnumber = getNumber(100);
-                    itr++;
-                    if (itr <= cellsquantity) {
-                        wincell = randomnumber;
-                        wincells.push(wincell);
-                        return wincells;
-                    }
-                    $(this).find("input.block").attr("value", randomnumber);
-                    $(this).find("input.block").attr("placeholder", randomnumber);
-                });
-            }
-
-            timergo();
-        }
-
-        var timer2 = 0;
-
-        function timergo() {
-            $("#timervalue").on("change", function () {
-                timer2 = $("#timervalue").val();
-                console.log(timer2);
-            });
-
-            setTimeout(function () {
-                $("input.block").css("color", "#fff");
-            }, timer2);
-        }
-
-        function getNumber(maxx) {
-            var min = 1,
-                max = maxx,
-                random;
-            do {
-                random = Math.floor(Math.random() * (max - min)) + min;
-            } while (random === getNumber.last);
-
-            getNumber.last = random;
-            return random;
-        };
-
-        $('.blocks-wrapper-block input.block').click(function () {
-            $(this).css("color", "#000");
-        });
-
-        var $result = $("#result");
-
-        $(".blocks input.block").click(function () {
-            wincellsfinalres.push($(this).val());
-            wincellsfinalres.forEach(function (item, i, arr) {
-                wincells.forEach(function (item, i, arr) {
-                    if (wincellsfinalres[i] == item) {
-                        console.log(item);
-                        console.log("winnumber");
-                    }
-                });
-            });
-        });
-
-
-        $("input.block").click(function () {
-            $(this).css("color", "#000000");
-        });
-
-        var tnum = 0;
-        var cnum = 0;
-        var nnum = $("#timervalue").val();
-
-        function inpercent(tnum, cnum) {
-            percent = a / b * 100;
-            return percent;
-        }
-
-        setTimeout(function () {
-            if (nnum == cnum && nnum >= 0) {
-                cnum = nnum - 1;
-                $("#timervalue").val(cnum);
-            }
-        }, 1000);
-
-        function isEqual(a, b) {
-            // if length is not equal //
-            if (a.length != b.length) {
-                return "False";
-            } else {
-                // comapring each element of array //
-                for (var i = 0; i < a.length; i++)
-                    if (a[i] != b[i])
-                        return "False";
-                return "True";
-            }
-        }
-
-        function checkordered(wincells, wincellsfinalres) {
-            wincells = wincells.sort();
-            if (isEqual(wincells, wincellsfinalres)) {
-                return true
-            } else {
-                return false;
-            }
-        }
-
-        function checkarbitrary(wincells, wincellsfinalres) {
-            if (wincells.length == wincellsfinalres.length) {
-			
-            }
-        }
-
-        function checkBackStraight(param) {
-            return param + "return";
-        }
-
-        function winloose() {
-            SCORERATE = SCORERATE + 3;
-            alert(SCORERATE);
-        }
-
-        function setscorerate() {
-            $(".btn-modal").trigger("click");
-            $(".rating").text(180);
-        }
-    });
-
-</script>
-
+<script src="main.js"></script>
 </html>
