@@ -18,31 +18,31 @@
     <div class="game-body">
         <div class="blocks-wrapper">
             <div class="blocks-wrapper-block row col-md-12 center row">
-                <div class="blocks col-md-2"><input class="block" value="1"></div>
-                <div class="blocks col-md-2"><input class="block" value="2"></div>
-                <div class="blocks col-md-2"><input class="block" value="3"></div>
-                <div class="blocks col-md-2"><input class="block" value="4"></div>
-                <div class="blocks col-md-2"><input class="block" value="5"></div>
-                <div class="blocks col-md-2"><input class="block" value="6"></div>
-                <div class="blocks col-md-2"><input class="block" value="7"></div>
-                <div class="blocks col-md-2"><input class="block" value="8"></div>
-                <div class="blocks col-md-2"><input class="block" value="9"></div>
-                <div class="blocks col-md-2"><input class="block" value="10"></div>
-                <div class="blocks col-md-2"><input class="block" value="11"></div>
-                <div class="blocks col-md-2"><input class="block" value="12"></div>
-                <div class="blocks col-md-2"><input class="block" value="13"></div>
-                <div class="blocks col-md-2"><input class="block" value="14"></div>
-                <div class="blocks col-md-2"><input class="block" value="15"></div>
-                <div class="blocks col-md-2"><input class="block" value="16"></div>
-                <div class="blocks col-md-2"><input class="block" value="17"></div>
-                <div class="blocks col-md-2"><input class="block" value="18"></div>
-                <div class="blocks col-md-2"><input class="block" value="19"></div>
-                <div class="blocks col-md-2"><input class="block" value="20"></div>
-                <div class="blocks col-md-2"><input class="block" value="21"></div>
-                <div class="blocks col-md-2"><input class="block" value="22"></div>
-                <div class="blocks col-md-2"><input class="block" value="23"></div>
-                <div class="blocks col-md-2"><input class="block" value="24"></div>
-                <div class="blocks col-md-2"><input class="block" value="25"></div>
+                <div class="blocks col-md-2"><input class="block" value="1" placeholder="1"></div>
+                <div class="blocks col-md-2"><input class="block" value="2" placeholder="2"></div>
+                <div class="blocks col-md-2"><input class="block" value="3" placeholder="3"></div>
+                <div class="blocks col-md-2"><input class="block" value="4" placeholder="4"></div>
+                <div class="blocks col-md-2"><input class="block" value="5" placeholder="5"></div>
+                <div class="blocks col-md-2"><input class="block" value="6" placeholder="6"></div>
+                <div class="blocks col-md-2"><input class="block" value="7" placeholder="7"></div>
+                <div class="blocks col-md-2"><input class="block" value="8" placeholder="8"></div>
+                <div class="blocks col-md-2"><input class="block" value="9" placeholder="9"></div>
+                <div class="blocks col-md-2"><input class="block" value="10" placeholder="10"></div>
+                <div class="blocks col-md-2"><input class="block" value="11" placeholder="11"></div>
+                <div class="blocks col-md-2"><input class="block" value="12" placeholder="12"></div>
+                <div class="blocks col-md-2"><input class="block" value="13" placeholder="13"></div>
+                <div class="blocks col-md-2"><input class="block" value="14" placeholder="14"></div>
+                <div class="blocks col-md-2"><input class="block" value="15" placeholder="15"></div>
+                <div class="blocks col-md-2"><input class="block" value="16" placeholder="16"></div>
+                <div class="blocks col-md-2"><input class="block" value="17" placeholder="17"></div>
+                <div class="blocks col-md-2"><input class="block" value="18" placeholder="18"></div>
+                <div class="blocks col-md-2"><input class="block" value="19" placeholder="19"></div>
+                <div class="blocks col-md-2"><input class="block" value="20" placeholder="20"></div>
+                <div class="blocks col-md-2"><input class="block" value="21" placeholder="21"></div>
+                <div class="blocks col-md-2"><input class="block" value="22" placeholder="22"></div>
+                <div class="blocks col-md-2"><input class="block" value="23" placeholder="23"></div>
+                <div class="blocks col-md-2"><input class="block" value="24" placeholder="24"></div>
+                <div class="blocks col-md-2"><input class="block" value="25" placeholder="25"></div>
             </div>
         </div>
     </div>
@@ -55,34 +55,37 @@
                             <option value="Упорядоченый">Упорядоченый</option>
                             <option value="Произвольный">Произвольный</option>
                         </select>
-
                         <div class="select-inputs">
-                            <label class="radio-button checkcontainer" for="radio-button">
-                                <p><input class="gametype-input" type="radio" value="Прямой" name="radio-gametype1"
-                                          checked="checked"><span>Прямой</span></p>
-                                <span class="checkmark">
-
+                            <form id="myForm">
+                                <label class="radio-button checkcontainer" for="radio-button">
+                                    <p><input class="gametype-input" type="radio" value="Прямой" name="radio-gametype1"
+                                              checked="checked"><span>Прямой</span></p>
+                                    <span class="checkmark">
                             </span>
-                            </label>
-                            <label class="radio-button checkcontainer" for="radio-button">
-                                <p><input class="gametype-input" type="radio" value="Обратный" name="radio-gametype1"
-                                          checked="checked"><span>Обратный</span></p>
-                                <span class="checkmark">
+                                </label>
+                                <label class="radio-button checkcontainer" for="radio-button">
+                                    <p><input class="gametype-input" type="radio" value="Обратный"
+                                              name="radio-gametype1"
+                                              checked="checked"><span>Обратный</span></p>
+                                    <span class="checkmark">
                             </span>
-                            </label>
+                                </label>
+                            </form>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="game-control-block row">
                 <div class="visibletime">
-                    <div class="select2">
-                        <p for="visibletime">Время Просмотра</p>
-                        <div class="range-wrapper">
-                            <input type="range" id="visibletime-range" name="volume" min="0" max="10">
-                            <input type="text" id="visibletime-res" value="5">
-                        </div>
+                    <div class="timer-img">
+                        <img src="https://i.ibb.co/TY15vvv/timer.png" alt="timer">
                     </div>
+                    <p for="visibletime">Время Просмотра</p>
+                    <select id="visibletime-val">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
                 </div>
             </div>
             <div class="game-control-block row">
@@ -94,14 +97,21 @@
                 </div>
             </div>
             <div class="game-control-block row">
-                <div class="timer">
-                    <p for="timer">Timer</p>
-                    <input type="checkbox" name="checkbox">
-                    <div class="range-wrapper">
-                        <input type="range" id="timer-range" name="volume" min="0" max="10">
-                        <input type="text" id="timervalue" value="5">
-                    </div>
+                <div class="timer-img">
+                    <img src="https://i.ibb.co/TY15vvv/timer.png" alt="timer">
                 </div>
+                <p class="timer">Таймер</p>
+                <select id="timer-range">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                </select>
             </div>
             <div class="game-control-block row">
                 <div class="collsquantity">
@@ -122,16 +132,6 @@
                         <option value="13">13</option>
                         <option value="14">14</option>
                         <option value="15">15</option>
-                        <option value="16">16</option>
-                        <option value="17">17</option>
-                        <option value="18">18</option>
-                        <option value="19">19</option>
-                        <option value="20">20</option>
-                        <option value="21">21</option>
-                        <option value="22">22</option>
-                        <option value="23">23</option>
-                        <option value="24">24</option>
-                        <option value="25">25</option>
                     </select>
                 </div>
             </div>
@@ -163,12 +163,114 @@
                 </div>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+                <button type="button" class="btn btn-secondary button-rating" data-dismiss="modal">Закрыть</button>
             </div>
         </div>
     </div>
 </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
 <style type="text/css">
+    body {
+        overflow: visible;
+    }
+
+    button.close {
+        color: rgb(0, 0, 0);
+    }
+
+    button.close span {
+        color: rgb(0, 0, 0);
+    }
+
+    .blocks input.block {
+        border: 3px solid rgb(255, 181, 0);
+    }
+
+    button.btn.btn-secondary.button-rating {
+        background: rgb(0, 0, 0);
+    }
+
+    @media screen and (max-width: 1025px) {
+        #visibletime-range {
+
+            width: 40px;
+
+            top: 0;
+
+            position: absolute;
+        }
+
+        .blocks-wrapper-block.row.col-md-12.center.row {
+            width: 100%;
+        }
+
+        .blocks {
+            width: 120px;
+            height: 80px;
+        }
+
+        .select2 #visibletime-res {
+            position: relative;
+            width: 30px;
+            height: auto;
+        }
+
+        .game-control {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            align-content: center;
+            margin: 20px 0;
+            position: relative;
+        }
+
+        .modal-control-mobile {
+            position: fixed;
+            min-width: 100%;
+            z-index: 9999;
+            bottom: 100px;
+            background: #fff;
+            border: 1px solid rgb(255, 181, 0);
+        }
+
+        .score {
+            display: none;
+        }
+
+        .status {
+            display: none;
+        }
+    }
+
+    .modal-content {
+        position: relative;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        width: 100%;
+        pointer-events: auto;
+        background-color: #fff;
+        background-clip: padding-box;
+        border: 1px solid rgb(0, 0, 0);
+        outline: 0;
+    }
+
     .select2 p {
         text-align: center;
     }
@@ -182,6 +284,17 @@
         margin-top: 25vh;
     }
 
+    .game-control p {
+    }
+
+    .collsquantity .timer-img {
+        text-align: right;
+    }
+
+    .collsquantity p {
+        text-align: right;
+    }
+
     .modal-header {
         border: none;
     }
@@ -191,17 +304,13 @@
     }
 
     select#collsquantityselect {
-        width: 82px;
-        height: 82px;
         position: relative;
-        left: 40px;
         top: 8px;
-        border: 2px solid rgb(255, 181, 0);
+        text-align: center;
+        border: 3px solid rgb(255, 181, 0);
+        width: 100px;
     }
 
-    .game-control-block.row:nth-child(3) button h1 {
-        color: #ffb500;
-    }
 
     .collsquantity p {
         padding: 0;
@@ -254,7 +363,7 @@
         top: 26px;
         left: 44px;
         font-size: 14px;
-        border: 2px solid rgb(255, 181, 0);
+        border: 3px solid rgb(255, 181, 0);
     }
 
     .collsquantityselect {
@@ -264,8 +373,6 @@
 
     .timer {
         position: relative;
-        height: 100%;
-        text-align: center;
     }
 
     .select2 #visibletime-res {
@@ -275,7 +382,7 @@
         height: 82px;
         right: 18px;
         font-size: 14px;
-        border: 2px solid rgb(255, 181, 0);
+        border: 3px solid rgb(255, 181, 0);
     }
 
     .timer p {
@@ -294,7 +401,9 @@
     }
 
     .game-wrapper {
+        position: relative;
         width: 100%;
+        height: 100%;
     }
 
     #visibletime-range {
@@ -307,21 +416,23 @@
     }
 
     #timer-range {
-        transform: rotate(-90deg);
-        width: 72px;
         position: relative;
-        top: 6px;
-        left: -24px;
         background: transparent;
+        border: 3px solid rgb(255, 181, 0);
+        width: 100px;
     }
 
-    .game-control-block.row {
+    .game-control-block {
         width: 180px;
         height: 100px;
     }
 
+    .game-control-block.row {
+        display: block;
+    }
+
     .button-start button {
-        width: 100% !important;
+        /* width: 100% !important; */
     }
 
     .button-start {
@@ -342,12 +453,7 @@
         position: relative;
         width: 100%;
         height: 100%;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
+        display: block;
     }
 
     .game-control {
@@ -383,8 +489,7 @@
         justify-content: center;
         align-items: center;
         align-content: center;
-        width: 85vw;
-        height: 100vh;
+        width: 800px;
         margin: 20px auto;
     }
 
@@ -393,13 +498,10 @@
         position: relative;
     }
 
-    button.button {
-        height: 160px;
-    }
 
     .blocks {
-        height: 150px;
-        min-width: 150px;
+        height: 120px !important;
+        max-width: 120px !important;
         margin: 10px;
     }
 
@@ -415,7 +517,7 @@
         max-width: 100% !important;
     }
 
-    .game-control-block.row {
+    .game-control-block {
         margin: 0;
         padding: 0;
     }
@@ -424,36 +526,56 @@
         cursor: pointer;
     }
 
-    .game-control-block.row:nth-child(1) {
+    .game-control-block:nth-child(1) {
         width: 180px;
         display: block;
         position: relative;
     }
 
-    .game-control-block.row:nth-child(2) {
-    }
-
-    .game-control-block.row:nth-child(3) {
+    .game-control-block:nth-child(3) {
         padding: 0;
         background: transparent;
     }
 
-    .game-control-block.row:nth-child(4) {
+    .game-control-block:nth-child(3) {
+        width: 200px;
+        border: 3px solid rgb(255, 181, 0);
+        margin-right: 30px;
+    }
+
+    .game-control-block:nth-child(3) {
+        border: transparent;
         width: 200px;
     }
 
-    .game-control-block.row:nth-child(5) {
-        border: transparent;
-        width: 200px;
+    .game-control-block:nth-child(3) button h1 {
+        color: #ffb500;
+    }
+
+    .game-control-block:nth-child(3) button {
+        border: 3px solid rgb(255, 181, 0);
+        background: transparent;
+    }
+
+    .game-control-block:nth-child(4) {
+        text-align: center;
+    }
+
+    select#visibletime-val {
+        border: 3px solid rgb(255, 181, 0);
+        width: 100px;
     }
 
     .checkcontainer input:checked ~ .checkmark {
         background: aqua;
     }
 
-    .game-control-block.row {
+    p {
+        margin-bottom: 10px;
+    }
+
+    .game-control-block {
         height: 160px;
-        padding: 10px;
         margin: 10px;
     }
 
@@ -466,8 +588,17 @@
     }
 
     .collsquantity {
+        position: relative;
         width: 100%;
         height: 100%;
+        text-align: center;
+    }
+
+    .modal-control-mobile {
+        margin-bottom: 20px;
+        position: relative;
+        bottom: 0;
+        margin-top: 40px;
     }
 
     .select-inputs p {
@@ -479,16 +610,11 @@
     }
 
     .blocks input.block {
-        border: 2px solid rgb(255, 181, 0);
-    }
-
-    .game-control-block.row:nth-child(3) button {
-        background: transparent;
-        border: none;
+        border: 3px solid rgb(255, 181, 0);
     }
 
     select#gametype-select {
-        border: 2px solid rgb(255, 181, 0);
+        border: 3px solid rgb(255, 181, 0);
     }
 
     input.gametype-input {
@@ -502,7 +628,7 @@
         z-index: 9999;
         height: 380px;
         width: 380px;
-        border: 2px solid rgb(255, 181, 0);
+        border: 3px solid rgb(255, 181, 0);
         background: #fff;
         text-align: center;
     }
@@ -517,50 +643,315 @@
         position: relative;
     }
 
-    @media screen and (max-width: 1090px) {
-        .game-control {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            align-items: center;
-            align-content: center;
-            margin: 20px 0;
-            position: relative;
-        }
+    .visibletime .timer-img {
+        text-align: left;
+        width: 100%;
     }
 
-    @media screen and (max-width: 640px) {
-        .modal-control-mobile {
-            position: fixed;
-            width: 640px;
-            height: 400px;
-            z-index: 9999;
-            bottom: 100px;
-        }
+    .timer-img {
+        position: relative;
+    }
 
-        .score {
-            display: none;
-        }
+    .timer-img img {
+        width: 40px;
+        height: 40px;
+    }
 
-        .status {
-            display: none;
-        }
+    .game-control {
+        width: 96%;
+        min-width: 40% !important;
+        position: relative;
+        margin: 0 auto;
     }
 </style>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        var popitki = 4;
+        var timer = 0;
+        var win = false;
+        var wincells = [];
+        var cellposition = [];
+        var positions = [];
+
+        var scorerating = 0;
+        var loose = false;
+
+        var timevisible = 1;
+        var cellsquantity = 1;
+
+        var result = $("#result");
+
+        gametyperandom = $("#gametype-select").val();
+        gametypeordered = $("input[name=radio-gametype]:checked").val();
+
+        $("#visibletime-val").on("change", function () {
+            timevisible = $("#visibletime-val option:selected").val();
+        });
+
+        $("#collsquantityselect").on("change", function () {
+            cellsquantity = $("#collsquantityselect").val();
+        });
+
+        $(".modal-control-mobile").show();
+
+        $("#timer-range").on("change", function () {
+            timer = $("#timer-range option:selected").val();
+        });
+
+        var positions = [];
+        var value = 0;
+
+        $(".gamestart").click(function () {
+
+            gamestart(timevisible, timer, cellsquantity);
+        });
+        winnumbers = [];
+        var compare = [];
+        var push = [];
+        comparess = [];
+        winnumberss = [];
+
+        function gamestart() {
+
+            loose = true;
+            if (loose == true) {
+                popitki = popitki - 1;
+            }
+
+            positions = [];
+            var random = 0;
+            for (var i = 1; i <= cellsquantity; i++) {
+                random = getNumber(25);
+                if (positions.includes(random) != true) {
+                    positions.push(getNumber(25));
+                }
+            }
+
+            generatenumbers(positions);
+
+            function generatenumbers(positions) {
+                var i = 1;
+                $.each($('.blocks-wrapper-block .blocks'), function () {
+                    $(this).find("input.block").val(i);
+                    i++;
+                });
+                var i = 1;
+
+                compare = [];
+
+                $.each($('.blocks-wrapper-block .blocks'), function () {
+                    var value = $(this).find("input.block").val();
+                    value = parseInt(value);
+                    if (positions.includes(value) == true) {
+                        push = getNumber(100);
+                        $(this).find("input.block").val(push);
+                        compare.push(parseInt(push));
+                        // $(this).find("input.block").prop('disabled', false); //
+                        $(this).find("input.block").css("color", "#000");
+                    }
+                    if (positions.includes(value) != true) {
+                        $(this).find("input.block").val(i);
+                        // $(this).find("input.block").prop('disabled', false); //
+                        $(this).find("input.block").css("color", "#fff");
+                    }
+                    i++;
+                });
+
+                $("input").click(function () {
+                    winnumber = $(this).val();
+                    if (winnumbers.includes(winnumber) != true) {
+                        winnumbers.push(parseInt(winnumber));
+                    }
+
+                    if ($("#gametype-select option:selected").val() == "Упорядоченый" && ($('input[name=radio-gametype1]:checked', '#myForm').val() == "Прямой")) {
+                        var win1 = '';
+                        a = compare;
+                        b = winnumbers;
+                        a = a.sort();
+                        b = b.sort();
+
+                        for (var i = 0; i <= a.length; i++) {
+                            if (b[i] == a[i])
+                                win1 = true;
+
+                            if (b[i] != a[i])
+                                win1 = false;
+                        }
+                        if (win1 == true) {
+                            win(true);
+                        }
+
+                    }
+                    if ($("#gametype-select option:selected").val() == "Упорядоченый" && ($('input[name=radio-gametype1]:checked', '#myForm').val() == "Обратный")) {
+
+                        console.log($("#gametype-select option:selected").val());
+
+                        c = compare;
+                        d = winnumbers;
+                        c = c.sort().reverse();
+                        d = d.sort().reverse();
+
+                        for (var i = 0; i <= c.length; i++) {
+                            if (d[i] == c[i]) {
+
+                                console.log(c);
+                                console.log(winnumberss);
+                                console.log("Win" + loose);
+                            }
+                            if (d[i] != c[i]) {
+                                loose = true;
+                                console.log("False" + loose);
+                            }
+                        }
+                    }
+                    if ($("#gametype-select option:selected").val() == "Произвольный") {
+                        if (winnumbers.length == compare.length) {
+                            win(true);
+                        }
+                        $(".gametype-input").attr('disabled', true);
+                    }
+                    if ($("#gametype-select option:selected").val() == "Упорядоченый") {
+                        $(".gametype-input").attr('disabled', false);
+                    }
+
+                });
+            }
+
+            function win(win) {
+                if (win == true) {
+                    scorerating += 10;
+                    alert("Вы выиграли ваш Рейтинг теперь" + scorerating);
+                    if (prompt("Отправить рейтинг на Фейсбук?", "Да отправить") == "Да отправить") {
+                        facebookinit();
+                    }
+                }
+            }
+
+            if (popitki == 0) {
+                $("input.block").css("color", "#000");
+                // $(".gamestart").prop('disabled', true);
+                if (loose == true && popitki == 0) {
+                    gamedone(true, scorerating);
+                }
+            }
+
+            function getNumber(number) {
+                var min = 1,
+                    max = number,
+                    random;
+                do {
+                    random = Math.floor(Math.random() * (max - min)) + min;
+                } while (random === getNumber.last);
+                getNumber.last = random;
+                return random;
+            };
+
+            $('.blocks-wrapper-block input.block').click(function () {
+                $(this).css("color", "#000");
+            });
+
+            $("input.block").click(function () {
+                $(this).css("color", "#000");
+            });
+
+            function isEqual(a, b) {
+                // if length is not equal //
+                if (a.length != b.length) {
+                    return "False";
+                } else {
+                    // comapring each element of array //
+                    for (var i = 0; i < a.length; i++)
+                        if (a[i] != b[i])
+                            return "False";
+                    return "True";
+                }
+            }
+        }
+
+        var winnumbers = [];
+
+        function gamedone(gamedone, scorerating) {
+            if (gamedone == true) {
+                function setscorerate() {
+                    $(".btn-modal").trigger("click");
+                    $(".rating").text(scorerating);
+                }
+
+                $(".button-rating").click(function () {
+                    gamedone = false;
+                    gamedone = true;
+
+                    if (gamedone == true) {
+
+                    }
+                });
+
+                setscorerate(scorerating);
+            }
+        }
+
+        function facebookinit() {
+            (function (d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) {
+                    return;
+                }
+                js = d.createElement(s);
+                js.id = id;
+                js.src = "https://connect.facebook.net/en_US/sdk.js";
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+
+            function statusChangeCallback(response) {
+                console.log('statusChangeCallback');
+                console.log(response);
+
+                // for FB.getLoginStatus().
+
+                if (response.status == 'connected') {
+                    // Logged into your app and Facebook.
+                    console.log('Welcome!  Fetching your information.... ');
+                    FB.api('/me', function (response) {
+                        console.log('Successful login for: ' + response.name);
+                        document.getElementById('status').innerHTML =
+                            'Thanks for logging in, ' + response.name + '!';
+                    });
+                } else {
+                    // The person is not logged into your app or we are unable to tell.
+                    document.getElementById('status').innerHTML = 'Please log ' + 'into this app.';
+                }
+            }
+
+            window.fbAsyncInit = function () {
+                FB.init({
+                    appId: '506739016772050',
+                    cookie: true,
+                    cache: true,
+                    xfbml: true,
+                    version: 'v4.0'
+                });
+                $('#loginbutton,#feedbutton').removeAttr('disabled');
+                FB.AppEvents.logPageView();
+                FB.getLoginStatus(function (response) {
+                    statusChangeCallback(response);
+                });
+                FB.ui({
+                    method: 'share_open_graph',
+                    action_type: 'og.likes',
+                    quote: "TEXT TEXT",
+                    cache: true,
+                    hashtag: ["#inten"],
+                    action_properties: JSON.stringify({
+                        object: 'https://inten.ua/igra-templejti/'
+                    })
+                }, function (response) {
+                    console.log(response);
+                });
+            };
+        }
+
+    });
+</script>
 </body>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
-<script src="main.js"></script>
 </html>
